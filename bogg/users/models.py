@@ -10,10 +10,22 @@ from django.utils.translation import ugettext_lazy as _
 
 @python_2_unicode_compatible
 class User(AbstractUser):
-
-    # First Name and Last Name do not cover name patterns
-    # around the globe.
     name = models.CharField(_("Name of User"), blank=True, max_length=255)
+
+    weight = models.DecimalField(
+        null=True,
+        blank=True,
+        verbose_name='Current weight.',
+        name='Weight',
+        decimal_places=2,
+        max_digits=6,
+    )
+
+    calorie_allowance = models.IntegerField(
+        default=2000,
+        verbose_name='Daily calorie intake allowance.',
+        name='Daily Calorie Allowance',
+    )
 
     def __str__(self):
         return self.username

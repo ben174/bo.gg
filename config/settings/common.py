@@ -44,6 +44,7 @@ THIRD_PARTY_APPS = (
 # Apps specific for this project go here.
 LOCAL_APPS = (
     'bogg.users',  # custom users app
+    'track'
     # Your stuff: custom apps go here
 )
 

@@ -112,12 +112,14 @@ module.exports = function (grunt) {
       runDjango: {
         cmd: 'python <%= paths.manageScript %> runserver'
       },
-      
+      runMailHog: {
+        cmd: './mailhog'
+      },
     }
   });
 
   grunt.registerTask('serve', [
-    
+    'bgShell:runMailHog',
     'bgShell:runDjango',
     'watch'
   ]);

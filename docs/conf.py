@@ -232,7 +232,7 @@ man_pages = [
 texinfo_documents = [
     ('index', 'bogg', u'bogg Documentation',
      u"Ben Friedland", 'bogg',
-     'Tracking stuff', 'Miscellaneous'),
+     'Tracker of things', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.

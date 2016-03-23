@@ -63,5 +63,3 @@ tests/.hitch
 
 # MailHog binary
 mailhog
-
-venv

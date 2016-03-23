@@ -1,6 +1,6 @@
 {
   "name": "bogg",
-  "description": "Tracking stuff",
+  "description": "Tracker of things",
   "env": {
     "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-python",
     "DJANGO_SETTINGS_MODULE": "config.settings.production",
